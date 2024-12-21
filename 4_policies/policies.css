@@ -1,0 +1,45 @@
+html, body {
+    width: 100%;
+}
+
+.section-policies {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmin;
+    align-items: flex-start;
+    margin: var(--main-gap-vertical) 0;
+}
+
+.section-policies span {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--main-gap-horizontal);
+}
+.policies-title {
+    width: auto;
+    word-break: break-word;
+}
+
+ul {
+    padding: 0;
+}
+
+.section-policies > *  {
+    padding: 0 var(--main-gap-horizontal);
+}
+
+h2 {
+    margin: 30px 0 15px 0;
+    padding: 0;
+}
+
+.section-policies h3,
+.section-policies h4 {
+    margin: 10px 0 5px 0;
+}
+
+@media screen and (max-width: 400px) {
+    p {
+        font-size: 14px;
+    }
+}

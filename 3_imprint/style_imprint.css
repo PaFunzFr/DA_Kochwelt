@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.imprint-section {
+    display: flex;
+    margin: auto 0;
+    width: 100%;
+}
+
+.imprint-section span {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: var(--main-gap-horizontal);
+    margin: 0 auto;
+}
+
+.imprint-title {
+    margin: 0;
+    padding: 0;
+}
+
+.imprint-title:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+ul {
+    padding: 0;
+}
+.imprint-section ul li {
+    margin-top: 6px;
+}
+/*
+@media screen and (min-width: 1440px) {
+    .imprint-section span {
+        padding: 0;
+    }
+}
+    */

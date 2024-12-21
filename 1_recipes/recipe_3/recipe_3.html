@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt | Rezept des Tages</title>
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+    <link rel="stylesheet" href="./style_recipe.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/0_favicon/logo_small.png">
+</head>
+
+<body>
+    <header>
+        <section class="header-container app-max-width">
+            <a href="../../index.html">
+                <img class="main-logo" src="../../assets/img/1_start/logo.png" alt="picture of main logo">
+            </a>
+            <ul class="nav-bar">
+                <li class="hide-mobile"><a href="../../index.html">Start</a></li>
+                <li class="hide-mobile"><a href="../recipe_2/recipe_2.html">Rezept des Tages</a></li>
+                <li class="hide-mobile"><a href="../../2_contact/contact.html">Kontakt</a></li>
+                <li class="hide-mobile"><a href="../../3_imprint/imprint.html">Impressum</a></li>
+                <li class="hamburger-menu-btn show-mobile" id="menuButton" onclick="openMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="nav-bar-slider hidden-top" id="slideBar">
+        <ul class="slider-menu">
+            <li><a href="../../index.html">Start</a></li>
+            <li><a href="../recipe_2/recipe_2.html">Rezept des Tages</a></li>
+            <li><a href="../../2_contact/contact.html">Kontakt</a></li>
+            <li><a href="../../3_imprint/imprint.html">Impressum</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="section-daily-recipe">
+            <div class="daily-recipe-container app-max-width">
+                <h1>Süßkartoffel Pommes</h1>
+                <img class="daily-recipe-img" src="./assets/img/sweet_potatoe_small.jpg" alt="picture of highlighted recipe">
+                <ul class="recipe-infos">
+                    <li>
+                        <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                        <p>45min</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/2_recipe/brain-solid.svg" alt="">
+                        <p>einfach</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/2_recipe/calendar-alt-regular.svg" alt="">
+                        <p id="date"></p>
+                    </li>
+                </ul>
+                <div class="h-line"></div>
+                <div class="ingredients-container">
+                    <span class="ingredient-calculator">
+                        <label>Zutaten für</label>
+                        <span class="calculator-input">
+                            <input id="inputPortion" type="number" min="1" max="99" value="4" required>
+                            <label class="portions">Portionen</label>
+                        </span>
+                    </span>
+                    <ul class="ingredients-list">
+                        <ul class="ingredient">
+                            <li class="ingredient-amount" id="ingredient-1">4</li>
+                            <li>stk</li>
+                            <li>große Süßkartoffeln</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li class="ingredient-amount" id="ingredient-2">1</li>
+                            <li>Prise</li>
+                            <li>Salz</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li class="ingredient-amount" id="ingredient-3">1</li>
+                            <li>l</li>
+                            <li>Öl zum Frittieren</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li class="ingredient-amount" id="ingredient-4">4</li>
+                            <li>el</li>
+                            <li>Speisestärke</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li class="ingredient-amount" id="ingredient-5">3</li>
+                            <li>el</li>
+                            <li>Wasser</li>
+                        </ul>
+                    </ul>
+                    <h4>Nährwerte pro Portion</h4>
+                    <table class="nutritions">
+                        <tr>
+                            <th>kcal</th>
+                            <th>Eiweiß</th>
+                            <th>Fett</th>
+                            <th>KH</th>
+                        </tr>
+                        <tr>
+                            <td>298</td>
+                            <td>2,47g</td>
+                            <td>22,14g</td>
+                            <td>40,54g</td>
+                        </tr>
+                    </table>
+                    <h4>Zubereitung</h4>
+                    <ul class="recipe-infos">
+                        <li>
+                            <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                            <p>Gesamtzeit ca 45 Minuten</p>
+                        </li>
+                        <li>
+                            <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                            <p>Zubereitungszeit ca 30 Minuten</p>
+                        </li>
+                    </ul>
+                    <ul class="recipe-howto">
+                        <li class="howto-step">Die Kartoffeln schälen und schneiden. Diese im Anschluss gründlich waschen, um die Stärke der Kartoffeln zu mindern.
+                            Die Kartoffelstäbchen am Ende gut trocknen. Ein Küchentuch bietet sich hier an.
+                        </li>
+                        <li class="howto-step">Die Stärke und das Wasser zu einer entsprechenden Masse vermengen.
+                        </li>
+                        <li class="howto-step">Sämtliche Kartoffeln werden nun durch die Panade-Massse gezogen. Es sollte gleichmäßig und dünn auf den Pommes verteilt sein.
+                        </li>
+                        <li class="howto-step">Pommes in die Fritteuse geben, bis sie goldbraun sind.
+                        </li>
+                        <li class="howto-step">Herausnehmen und apftropfen lassen.
+                        </li>
+                    </ul>
+                    <p class="recipe-by">Rezept erstellt von</p>
+                    <div class="recipe-author">
+                        <img class="author-img" src="./assets/img/profile-img.jpg" alt="picture of user">
+                        <p>Frittenheld</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container app-max-width">
+            <span class="footer-left">
+                <a href="../../index.html">
+                    <img class="footer-logo" src="../../assets/img/5_footer/logo_white.png" alt="picture of main logo">
+                </a>
+                <p>&copy; 2024 by Valeriya, Shardzhil & Patrick</p>
+                <p>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+                <p><a href="../../4_policies/policies.html">Datenschutz</a> | <a href="../../3_imprint/imprint.html">Impressum</a></p>
+            </span>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../../assets/img/5_footer/facebook_white.png" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../../assets/img/5_footer/instagram_white.png" alt="Instagram Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.x.com" target="_blank">
+                        <img src="../../assets/img/5_footer/twitter_white.png" alt="Twitter Logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+<script type="text/javascript" src="../../script.js"></script>
+<script type="text/javascript" src="../script_recipe.js"></script>
+</html>

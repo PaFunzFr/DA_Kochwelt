@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt | Rezept des Tages</title>
+    <link rel="stylesheet" href="../../style.css" type="text/css"> 
+    <link rel="stylesheet" href="./style_recipe.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/0_favicon/logo_small.png">
+</head>
+
+<body>
+    <header>
+        <section class="header-container app-max-width">
+            <a href="../../index.html">
+                <img class="main-logo" src="../../assets/img/1_start/logo.png" alt="picture of main logo">
+            </a>
+            <ul class="nav-bar">
+                <li class="hide-mobile"><a href="../../index.html">Start</a></li>
+                <li class="hide-mobile"><a href="../recipe_2/recipe_2.html">Rezept des Tages</a></li>
+                <li class="hide-mobile"><a href="../../2_contact/contact.html">Kontakt</a></li>
+                <li class="hide-mobile"><a href="../../3_imprint/imprint.html">Impressum</a></li>
+                <li class="hamburger-menu-btn show-mobile" id="menuButton" onclick="openMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="nav-bar-slider hidden-top" id="slideBar">
+        <ul class="slider-menu">
+            <li><a href="../../index.html">Start</a></li>
+            <li><a href="./recipe_2.html">Rezept des Tages</a></li>
+            <li><a href="../../2_contact/contact.html">Kontakt</a></li>
+            <li><a href="../../3_imprint/imprint.html">Impressum</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="section-daily-recipe">
+            <div class="daily-recipe-container app-max-width">
+                <h1>Tantanmen Ramen</h1>
+                <img class="daily-recipe-img" src="assets/img/ramen_small.jpg" alt="picture of highlighted recipe">
+                <ul class="recipe-infos">
+                    <li>
+                        <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                        <p>50min</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/2_recipe/brain-solid.svg" alt="">
+                        <p>normal</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/img/2_recipe/calendar-alt-regular.svg" alt="">
+                        <p id="date"></p>
+                    </li>
+                </ul>
+                <div class="h-line"></div>
+                <div class="ingredients-container">
+                    <span class="ingredient-calculator">
+                        <label>Zutaten für</label>
+                        <span class="calculator-input">
+                            <input id="inputPortion" type="number" min="1" max="99" value="4" required>
+                            <label class="portions">Portionen</label>
+                        </span>
+                    </span>
+                    <ul class="ingredients-list">
+                        <ul class="ingredient">
+                            <li id="ingredient-1" class="ingredient-amount">2</li>
+                            <li>cm</li>
+                            <li>Ingwer</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-2" class="ingredient-amount">2</li>
+                            <li>stk</li>
+                            <li>Knoblauchzehen</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-3" class="ingredient-amount">3</li>
+                            <li>tl</li>
+                            <li>ger. Sesamöl</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-4" class="ingredient-amount">60</li>
+                            <li>g</li>
+                            <li>Tahin</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-5" class="ingredient-amount">2</li>
+                            <li>el</li>
+                            <li>Misopaste</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-6" class="ingredient-amount">4</li>
+                            <li>el</li>
+                            <li>Tamari / Sojasoße</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-7" class="ingredient-amount">1</li>
+                            <li>el</li>
+                            <li>heller Essig</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-8" class="ingredient-amount">2</li>
+                            <li>el</li>
+                            <li>Ahornsirup</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-9" class="ingredient-amount">2</li>
+                            <li>l</li>
+                            <li>Gemüsebrühe</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-10" class="ingredient-amount">3</li>
+                            <li>stk</li>
+                            <li>getr. Shiitake-Pilze</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-11" class="ingredient-amount">250</li>
+                            <li>ml</li>
+                            <li>Sojadrink</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-12" class="ingredient-amount">1</li>
+                            <li>stk</li>
+                            <li>Pak Choi</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-13" class="ingredient-amount">2</li>
+                            <li>pck</li>
+                            <li>Ramennudeln</li>
+                        </ul>
+                    </ul>
+                    <h4>Topping</h4>
+                    <ul class="ingredients-list">
+                        <ul class="ingredient">
+                            <li id="ingredient-14" class="ingredient-amount">120</li>
+                            <li>g</li>
+                            <li>Sojagranulat</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-15" class="ingredient-amount">1</li>
+                            <li>tl</li>
+                            <li>ger. Sesamöl</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-16" class="ingredient-amount">2</li>
+                            <li>el</li>
+                            <li>Tamari</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-17" class="ingredient-amount">2</li>
+                            <li>tl</li>
+                            <li>heller Essig</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-18" class="ingredient-amount">2</li>
+                            <li>tl</li>
+                            <li>Ahornsirup</li>
+                        </ul>
+                        <ul class="ingredient">
+                            <li id="ingredient-19" class="ingredient-amount">1</li>
+                            <li>el</li>
+                            <li>Erdnussmuß</li>
+                        </ul>
+                    </ul>
+                    <h4>Nährwerte pro Portion</h4>
+                    <table class="nutritions">
+                        <tr>
+                            <th>kcal</th>
+                            <th>Eiweiß</th>
+                            <th>Fett</th>
+                            <th>KH</th>
+                        </tr>
+                        <tr>
+                            <td>205</td>
+                            <td>1,47g</td>
+                            <td>12,54g</td>
+                            <td>21,67g</td>
+                        </tr>
+                    </table>
+                    <h4>Zubereitung</h4>
+                    <ul class="recipe-infos">
+                        <li>
+                            <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                            <p>Gesamtzeit ca 80 Minuten</p>
+                        </li>
+                        <li>
+                            <img src="../../assets/img/2_recipe/clock-regular.svg" alt="">
+                            <p>Zubereitungszeit ca 40 Minuten</p>
+                        </li>
+                    </ul>
+                    <ul class="recipe-howto">
+                        <li class="howto-step">Misopaste, Tamari (Sojasoße), Essig und Tahin
+                            verrühren bis eine cremige Würzpaste entstanden ist.
+                        </li>
+                        <li class="howto-step">Den Ingwer und die Knoblauchzehen klein schneiden.
+                            Bratöl in einem Topf erhitzen und Ingwer, Knoblauch
+                            sowie Szechuanpfeffer darin kurz anbraten. Dann die
+                            Paste dazu, umrühren und erneut kurz anbraten.
+                        </li>
+                        <li class="howto-step">Alles mit der Gemüsebrühe ablöschen und einmal kurz
+                            aufkochen lassen. Die Hitze reduzieren, drei Shiitake-
+                            Pilze (getrocknet) und Ahornsirup in den Topf geben
+                            und die Suppe ca. 20 Minuten leicht köcheln lassen.
+                        </li>
+                        <li class="howto-step">In der Zwischenzeit das Sojatopping zubereiten. Dazu
+                            alle Zutaten des Toppings, außer dem Sojagranulat,
+                            zu einer Soße verrühren. Anschließend das rohe
+                            Granulat mit der Marinade vermischen.
+                        </li>
+                        <li class="howto-step">Nach ca. 20 Minuten die Pilze aus der Suppe entfernen.
+                            Den Sojadrink dazugeben. In einen zweiten Topf und
+                            einem Sieb die zu verzehrende Menge abschöpfen.
+                            Abgeschöpfte Inhalte (Knoblauch, Szechuanpfeffer
+                            etc.) wieder zurück in den ersten Topf.
+                            So hat man eine klare Brühe zum Portionieren.
+                        </li>
+                        <li class="howto-step">Den Pak Choi entweder vierteln oder in mundgerechte
+                            Stücke schneiden. Die frischen Shiitake-Pilze in Streifen
+                            schneiden. Beides zur Suppe geben und ca. 5 Minuten
+                            köcheln lassen.
+                        </li>
+                        <li class="howto-step">Am Ende Ramen hinzufügen, 90 Sekunden aufwärmen und mit
+                            Stäbchen auseinanderziehen.
+                        </li>
+                        <li class="howto-step">Gericht in Schalen servieren. Es empfiehlt sich erst den
+                            Inhalt und am Ende die Suppe aufzuschütten. Danach
+                            mit den Toppings & Deko garnieren.
+                        </li>
+                    </ul>
+                    <p class="recipe-by">Rezept erstellt von</p>
+                    <div class="recipe-author">
+                        <img class="author-img" src="./assets/img/profile-img.jpg" alt="picture of user">
+                        <p>Patrick</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container app-max-width">
+            <span class="footer-left">
+                <a href="../../index.html">
+                    <img class="footer-logo" src="../../assets/img/5_footer/logo_white.png" alt="picture of main logo">
+                </a>
+                <p>&copy; 2024 by Valeriya, Shardzhil & Patrick</p>
+                <p>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+                <p><a href="../../4_policies/policies.html">Datenschutz</a> | <a href="../../3_imprint/imprint.html">Impressum</a></p>
+            </span>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../../assets/img/5_footer/facebook_white.png" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../../assets/img/5_footer/instagram_white.png" alt="Instagram Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.x.com" target="_blank">
+                        <img src="../../assets/img/5_footer/twitter_white.png" alt="Twitter Logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+<script type="text/javascript" src="../../script.js"></script>
+<script type="text/javascript" src="../script_recipe.js"></script>
+</html>

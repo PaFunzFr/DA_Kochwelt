@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen bei Kochwelt</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/0_favicon/logo_small.png">
+</head>
+
+<body>
+    <header>
+        <section class="header-container app-max-width">
+            <a href="./index.html">
+                <img class="main-logo" src="./assets/img/1_start/logo.png" alt="picture of main logo">
+            </a>
+            <ul class="nav-bar">
+                <li class="hide-mobile"><a href="./index.html">Start</a></li>
+                <li class="hide-mobile"><a href="./1_recipes/recipe_2/recipe_2.html">Rezept des Tages</a></li>
+                <li class="hide-mobile"><a href="./2_contact/contact.html">Kontakt</a></li>
+                <li class="hide-mobile"><a href="./3_imprint/imprint.html">Impressum</a></li>
+                <li class="hamburger-menu-btn show-mobile" id="menuButton" onclick="openMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="nav-bar-slider hidden-top" id="slideBar">
+        <ul class="slider-menu">
+            <li><a href="">Start</a></li>
+            <li><a href="./1_recipes/recipe_2/recipe_2.html">Rezept des Tages</a></li>
+            <li><a href="./2_contact/contact.html">Kontakt</a></li>
+            <li><a href="./3_imprint/imprint.html">Impressum</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <section class="section-menu-highlight app-max-width margin">
+            <img class="highlight-img" src="assets/img/2_recipe/sweet_potatoe_small.jpg" alt="picture of highlighted menu">
+            <div class="highlight-txt">
+                <h2>Süßkartoffel Pommes</h2>
+                <p>
+                    Süßkartoffelpommes sind eine tolle Alternative zu klassischen Pommes. Sie zeichnen sich durch ihre natürliche Süße und die zarte, goldbraune Kruste aus.
+                </p>
+                <a class="general-btn" href="./1_recipes/recipe_3/recipe_3.html">Mehr erfahren</a>
+            </div>
+        </section>
+
+        <section class="recipe-layout margin">
+            <div class="section-recipe-list app-max-width">
+                <h2>Lust auf was Neues?</h2>
+                <ul class="recipe-container">
+                    <li>
+                        <a href="./1_recipes/recipe_1/recipe_1.html">
+                            <img src="./1_recipes/recipe_1/assets/img/chocolate_liqeur.jpg" alt="recipe image 1">
+                            <h3>Tantanmen Ramen</h3>
+                        </a>
+                    </li>
+                    <li class="gap"></li>
+                    <li>
+                        <a href="./1_recipes/recipe_2/recipe_2.html">
+                            <img src="./1_recipes/recipe_2/assets/img/ramen_small.jpg" alt="recipe image 2">
+                            <h3>Weisßee Marzipan-Schoko-Likör</h3>
+                        </a>
+                    </li>
+                    <li class="gap"></li>
+                    <li>
+                        <a href="./1_recipes/recipe_3/recipe_3.html">
+                            <img src="./1_recipes/recipe_3/assets/img/sweet_potatoe_small.jpg" alt="recipe image 3">
+                            <h3>Süßkartoffel Pommes</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-tips app-max-width margin">
+            <h2>Induktionsfeld oder Ceranfeld?</h2>
+            <ul class="tips-container">
+                <li class="tips-txt">
+                    Induktionsfelder überzeugen mit beeindruckender Effizienz: Sie übertragen Wärme direkt in den Topf, sparen Zeit und sind sicherer, da die Platte kaum heiß wird. Ceranfelder hingegen sind erschwinglicher und universell einsetzbar. Was zählt mehr für dich – Tempo und Technik oder Preis und Flexibilität?
+                </li>
+                <li>
+                    <img class="tips-img" src="./assets/img/1_start/cooking_field.jpg" alt="recipe image 3">
+                </li>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container app-max-width">
+            <span class="footer-left">
+                <a href="./index.html">
+                    <img class="footer-logo" src="./assets/img/5_footer/logo_white.png" alt="picture of main logo">
+                </a>
+                <p>&copy; 2024 by Valeriya, Shardzhil & Patrick</p>
+                <p>Created my free logo at <a href="https://logomakr.com/">LogoMakr.com</a></p>
+                <p><a href="./4_policies/policies.html">Datenschutz</a> | <a href="./3_imprint/imprint.html">Impressum</a></p>
+            </span>
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/img/5_footer/facebook_white.png" alt="Facebook Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/img/5_footer/instagram_white.png" alt="Instagram Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.x.com" target="_blank">
+                        <img src="./assets/img/5_footer/twitter_white.png" alt="Twitter Logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+    <script type="text/javascript" src="./script.js"></script>
+</html>
