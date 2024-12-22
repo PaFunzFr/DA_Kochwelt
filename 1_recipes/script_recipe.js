@@ -10,7 +10,7 @@ valuesForOnePortion = [];
 
 ingredients.forEach((amount) => {
     let baseIngredientValue = parseFloat(amount.innerText);
-    let onePortionValue = baseIngredientValue / 4;
+    const onePortionValue = baseIngredientValue / 4;
     valuesForOnePortion.push(onePortionValue);
 });
 
